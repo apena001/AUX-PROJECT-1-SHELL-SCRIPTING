@@ -6,11 +6,11 @@
 
 ## ASK THE USER FOR THEIR NAME AND AGE AND OUTPUT A MESSAGE WITH THEIR NAME AND THE YEAR THEY WERE BORN
 
-#echo "What is your name?"
-#read name
-#echo "What is your year of birth"
-#read year of birth
-#echo "My name is $name and my year of bith is $year of birth"
+echo "What is your name?"
+read name
+echo "What is your year of birth"
+read year of birth
+echo "My name is $name and my year of bith is $year of birth"
 ![Alt text](Images_Aux/Qest1.png)
 [label](Images_Aux/Quest1.mkv)
 
@@ -28,27 +28,27 @@
 
 ## COUNT THE NUMBER OF FILE IN THE CURRENT DIRECTORY AND OUTPUT THE RESULT 
 # Get user input
-#read -p "Enter directory location  " LOCATION
+read -p "Enter directory location  " LOCATION
 ## Execute command
-#command=$(ls $LOCATION |wc -l)
-#echo "Number of files in $LOCATION is $command"
+command=$(ls $LOCATION |wc -l)
+echo "Number of files in $LOCATION is $command"
 ![Alt text](Images_Aux/Quest4.png)
 [label](Images_Aux/Quest4.mkv)
 
 
 ## TAKE A LIST OF NUMBERS AS INPUT FROM THE USER AND OUTPUT THE SUM OF THOSE NUMBERS 
-#declare -a arrSum
-#read -p "Enter numbers: " arrSum
-#for i in ${arrSum[@]}
-#do 
-  # if [$i -ge 0 ]
-  # then 
-    #     ((tot=$tot + $i))
-   # fi 
-  #  ((c=$c+1))
-#done 
-#echo "Total is: $tot"
-#echo "The number of items: $c"
+declare -a arrSum
+read -p "Enter numbers: " arrSum
+for i in ${arrSum[@]}
+do 
+   if [$i -ge 0 ]
+   then 
+         ((tot=$tot + $i))
+    fi 
+    ((c=$c+1))
+done 
+echo "Total is: $tot"
+echo "The number of items: $c"
 
 ## OUTPUT A RANDOM NUMBER BETWEEN 1 AND 100 
 
